@@ -1,0 +1,87 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ÂµVision V5.40.0.0
+Copyright (C) 2024 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 Thomas, 1, LIC=32B1Q-NJZG3-56KQ2-9LSE4-67JG1-1ERPM
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.40.0.3
+Toolchain Path:  D:\Program Files\Keil5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         SARMCM3.DLL V5.40.0.3
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      CMSIS_AGDI.dll V1.33.18.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+D:\project32_MX\AD9959\MDK-ARM\AD9959.uvprojx
+Project File Date:  04/22/2026
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'D:\Program Files\Keil5\ARM\ARMCC\Bin'
+Build target 'AD9959'
+assembling startup_stm32f407xx.s...
+compiling main.c...
+../Core/Src/main.c(26): error:  #5: cannot open source input file "arm_math.h": No such file or directory
+  #include "arm_math.h"
+../Core/Src/main.c: 0 warnings, 1 error
+compiling stm32f4xx_it.c...
+compiling system_stm32f4xx.c...
+compiling gpio.c...
+compiling stm32f4xx_hal_flash_ramfunc.c...
+compiling stm32f4xx_hal_gpio.c...
+compiling stm32f4xx_hal.c...
+compiling stm32f4xx_hal_pwr_ex.c...
+compiling stm32f4xx_hal_msp.c...
+compiling stm32f4xx_hal_flash_ex.c...
+compiling stm32f4xx_hal_exti.c...
+compiling stm32f4xx_hal_flash.c...
+compiling stm32f4xx_hal_dma.c...
+compiling stm32f4xx_hal_rcc_ex.c...
+compiling stm32f4xx_hal_pwr.c...
+compiling stm32f4xx_hal_cortex.c...
+compiling ad9959.c...
+..\USER\ad9959.c(211): warning:  #186-D: pointless comparison of unsigned integer with zero
+      if (Ampli > 1023 || Ampli < 0)
+..\USER\ad9959.c(231): warning:  #186-D: pointless comparison of unsigned integer with zero
+      if (Phase > 359 || Phase < 0)
+..\USER\ad9959.c(250): warning:  #186-D: pointless comparison of unsigned integer with zero
+      if (Channel < 0 || Channel > 3)
+..\USER\ad9959.c: 3 warnings, 0 errors
+compiling stm32f4xx_hal_rcc.c...
+compiling stm32f4xx_hal_dma_ex.c...
+"AD9959\AD9959.axf" - 1 Error(s), 3 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.1.0.pack
+                ARM::CMSIS@6.1.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.1.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F4xx_DFP.3.1.1.pack
+                Keil::STM32F4xx_DFP@3.1.1
+                STMicroelectronics STM32F4 Series Device Support
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_AD9959
+  D:/Program Files/Keil5/ARM/PACK/ARM/CMSIS/6.1.0/CMSIS/Core/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@6.1.0
+      Include file:  CMSIS/Core/Include/tz_context.h
+Target not created.
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>
