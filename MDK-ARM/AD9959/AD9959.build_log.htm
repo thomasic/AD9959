@@ -22,42 +22,16 @@ Dialog DLL:      TCM.DLL V1.56.4.0
  
 <h2>Project:</h2>
 D:\project32_MX\AD9959\MDK-ARM\AD9959.uvprojx
-Project File Date:  04/22/2026
+Project File Date:  04/26/2026
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 5 (build 528)', folder: 'D:\Program Files\Keil5\ARM\ARMCC\Bin'
 Build target 'AD9959'
-assembling startup_stm32f407xx.s...
 compiling main.c...
-../Core/Src/main.c(26): error:  #5: cannot open source input file "arm_math.h": No such file or directory
-  #include "arm_math.h"
-../Core/Src/main.c: 0 warnings, 1 error
-compiling stm32f4xx_it.c...
-compiling system_stm32f4xx.c...
-compiling gpio.c...
-compiling stm32f4xx_hal_flash_ramfunc.c...
-compiling stm32f4xx_hal_gpio.c...
-compiling stm32f4xx_hal.c...
-compiling stm32f4xx_hal_pwr_ex.c...
-compiling stm32f4xx_hal_msp.c...
-compiling stm32f4xx_hal_flash_ex.c...
-compiling stm32f4xx_hal_exti.c...
-compiling stm32f4xx_hal_flash.c...
-compiling stm32f4xx_hal_dma.c...
-compiling stm32f4xx_hal_rcc_ex.c...
-compiling stm32f4xx_hal_pwr.c...
-compiling stm32f4xx_hal_cortex.c...
-compiling ad9959.c...
-..\USER\ad9959.c(211): warning:  #186-D: pointless comparison of unsigned integer with zero
-      if (Ampli > 1023 || Ampli < 0)
-..\USER\ad9959.c(231): warning:  #186-D: pointless comparison of unsigned integer with zero
-      if (Phase > 359 || Phase < 0)
-..\USER\ad9959.c(250): warning:  #186-D: pointless comparison of unsigned integer with zero
-      if (Channel < 0 || Channel > 3)
-..\USER\ad9959.c: 3 warnings, 0 errors
-compiling stm32f4xx_hal_rcc.c...
-compiling stm32f4xx_hal_dma_ex.c...
-"AD9959\AD9959.axf" - 1 Error(s), 3 Warning(s).
+linking...
+Program Size: Code=12396 RO-data=456 RW-data=2096 ZI-data=11920  
+FromELF: creating hex file...
+"AD9959\AD9959.axf" - 0 Error(s), 0 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -67,6 +41,12 @@ Package Vendor: ARM
                 CMSIS (Common Microcontroller Software Interface Standard)
    * Component: CORE Version: 6.1.0
 
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS-DSP.1.15.0.pack
+                ARM::CMSIS-DSP@1.15.0
+                CMSIS Embedded Compute Library
+   * Component: DSP Variant: Source Version: 1.15.0
+
 Package Vendor: Keil
                 https://www.keil.com/pack/Keil.STM32F4xx_DFP.3.1.1.pack
                 Keil::STM32F4xx_DFP@3.1.1
@@ -74,14 +54,51 @@ Package Vendor: Keil
 
 <h2>Collection of Component include folders:</h2>
   ./RTE/_AD9959
+  D:/Program Files/Keil5/ARM/PACK/ARM/CMSIS-DSP/1.15.0/Include
+  D:/Program Files/Keil5/ARM/PACK/ARM/CMSIS-DSP/1.15.0/PrivateInclude
   D:/Program Files/Keil5/ARM/PACK/ARM/CMSIS/6.1.0/CMSIS/Core/Include
 
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE@6.1.0
       Include file:  CMSIS/Core/Include/tz_context.h
-Target not created.
-Build Time Elapsed:  00:00:03
+
+   * Component: ARM::CMSIS:DSP&Source@1.15.0
+      Include file:  Include/arm_common_tables_f16.h
+      Include file:  Include/arm_const_structs.h
+      Include file:  Include/arm_const_structs_f16.h
+      Include file:  Include/arm_math_f16.h
+      Include file:  Include/arm_common_tables.h
+      Include file:  Include/arm_math.h
+      Source file:   Source/FastMathFunctions/FastMathFunctions.c
+      Source file:   Source/QuaternionMathFunctions/QuaternionMathFunctions.c
+      Source file:   Source/SupportFunctions/SupportFunctions.c
+      Source file:   Source/ControllerFunctions/ControllerFunctions.c
+      Source file:   Source/BasicMathFunctions/BasicMathFunctions.c
+      Source file:   Source/FilteringFunctions/FilteringFunctions.c
+      Source file:   Source/ComplexMathFunctions/ComplexMathFunctions.c
+      Source file:   Source/MatrixFunctions/MatrixFunctions.c
+      Source file:   Source/CommonTables/CommonTables.c
+      Source file:   Source/SVMFunctions/SVMFunctions.c
+      Source file:   Source/TransformFunctions/TransformFunctions.c
+      Source file:   Source/StatisticsFunctions/StatisticsFunctions.c
+      Source file:   Source/InterpolationFunctions/InterpolationFunctions.c
+      Source file:   Source/DistanceFunctions/DistanceFunctions.c
+      Source file:   Source/BayesFunctions/BayesFunctions.c
+      Source file:   Source/ComplexMathFunctions/ComplexMathFunctionsF16.c
+      Source file:   Source/CommonTables/CommonTablesF16.c
+      Source file:   Source/BayesFunctions/BayesFunctionsF16.c
+      Source file:   Source/BasicMathFunctions/BasicMathFunctionsF16.c
+      Source file:   Source/SupportFunctions/SupportFunctionsF16.c
+      Source file:   Source/FilteringFunctions/FilteringFunctionsF16.c
+      Source file:   Source/MatrixFunctions/MatrixFunctionsF16.c
+      Source file:   Source/DistanceFunctions/DistanceFunctionsF16.c
+      Source file:   Source/StatisticsFunctions/StatisticsFunctionsF16.c
+      Source file:   Source/InterpolationFunctions/InterpolationFunctionsF16.c
+      Source file:   Source/SVMFunctions/SVMFunctionsF16.c
+      Source file:   Source/FastMathFunctions/FastMathFunctionsF16.c
+      Source file:   Source/TransformFunctions/TransformFunctionsF16.c
+Build Time Elapsed:  00:00:02
 </pre>
 </body>
 </html>

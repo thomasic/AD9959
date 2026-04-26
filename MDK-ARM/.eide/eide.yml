@@ -25,7 +25,10 @@ virtualFolder:
                 - path: ../Core/Src/gpio.c
                 - path: ../Core/Src/stm32f4xx_it.c
                 - path: ../Core/Src/stm32f4xx_hal_msp.c
-                - path: ../Core/Src/spi.c
+                - path: ../Core/Src/adc.c
+                - path: ../Core/Src/dma.c
+                - path: ../Core/Src/tim.c
+                - path: ../Core/Src/usart.c
               folders: []
     - name: Drivers
       files: []
@@ -45,7 +48,11 @@ virtualFolder:
             - path: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c
             - path: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c
             - path: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c
-            - path: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c
+            - path: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c
+            - path: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c
+            - path: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c
+            - path: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c
+            - path: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c
           folders: []
         - name: CMSIS
           files:
@@ -56,6 +63,7 @@ virtualFolder:
         - path: ../USER/AD9959.h
         - path: ../USER/AD9959.c
         - path: ../USER/LMS.c
+        - path: ../USER/Adaptive_filter.h
       folders: []
 dependenceList: []
 outDir: build
@@ -68,6 +76,7 @@ targets:
         - USE_HAL_DRIVER
         - STM32F407xx
         - ARM_MATH_CM4
+        - __FPU_PRESENT=0
       incList:
         - .
         - ../Core/Inc
@@ -78,7 +87,6 @@ targets:
         - .cmsis/include
         - RTE/_AD9959
         - ../USER
-        - ../Middlewares/ST/ARM/DSP/Inc
       libList: []
     excludeList: []
     settings: {}

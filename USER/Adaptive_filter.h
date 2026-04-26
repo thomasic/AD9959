@@ -1,16 +1,20 @@
-#ifndef ADAPTIVE_FITLER_H_
-#define ADAPTIVE_FITLER_H_
+#ifndef ADAPTIVE_FILTER_H_
+#define ADAPTIVE_FILTER_H_
+
+#include "main.h"
+#include <stdint.h>
 
 typedef struct
 {
    float *x_ptr;
-   uint16_t lenth_x;
    float d;
-}Adptive_Filter_In;
+   int16_t lenth_x;
+}Adaptive_Filter_In;
 
 typedef struct
 {
     float y;
     float error;
-}Adptive_Filter_Out;
+}Adaptive_Filter_Out;
 
+#endif
