@@ -4,7 +4,8 @@
 #include "Adaptive_Filter.h"
 
 #define LMS_M 16
-#define LMS_NIU 0.000005
+#define LMS_NIU 0.0005f
+#define LMS_EPSILON 1e-7f
 
 extern float lms_x[LMS_M];
 extern Adaptive_Filter_In lms_input;

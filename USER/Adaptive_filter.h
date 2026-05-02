@@ -7,8 +7,8 @@
 typedef struct
 {
    float *x_ptr;
-   float d;
    int16_t lenth_x;
+   float d;
 }Adaptive_Filter_In;
 
 typedef struct

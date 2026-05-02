@@ -63,3 +63,4 @@ ad9959\lms.o: D:\Program Files\Keil5\ARM\PACK\ARM\CMSIS-DSP\1.15.0\Include\dsp/t
 ad9959\lms.o: D:\Program Files\Keil5\ARM\PACK\ARM\CMSIS-DSP\1.15.0\Include\dsp/filtering_functions.h
 ad9959\lms.o: D:\Program Files\Keil5\ARM\PACK\ARM\CMSIS-DSP\1.15.0\Include\dsp/quaternion_math_functions.h
 ad9959\lms.o: D:\Program Files\Keil5\ARM\PACK\ARM\CMSIS-DSP\1.15.0\Include\dsp/window_functions.h
+ad9959\lms.o: ../Core/Inc/usart.h
