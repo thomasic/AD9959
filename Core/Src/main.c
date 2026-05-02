@@ -176,10 +176,8 @@ int main(void)
           out_y[i] = lms_output.y;
           out_error[i] = lms_output.error;
 
-//          if((i % UART_PRINT_DECIM) == 0U)
-//          {
-            Usart1Printf("%f,%f,%f,%f\r\n", out_y[i], out_error[i], d_raw, lms_ref_block[i]);
-//          }
+          Usart1Printf("%f,%f,%f,%f\r\n", out_y[i], out_error[i], d_raw, lms_ref_block[i]);
+
 
         }
 
